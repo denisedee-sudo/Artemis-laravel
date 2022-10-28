@@ -20,14 +20,20 @@
 
 <body class="text-play">
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
-        <nav class="bg-carmine container ">
+        <nav class="navbar-expand-lg  fixed-top text-play bg-diamond ">
             <div class="flex items-center justify-between">
-                <a class="text-bubbles text-jsan text-decoration-none hover-big hover-maxy"
+                {{-- <a class="text-bubbles text-jsan text-decoration-none hover-big hover-maxy"
                     href="#">
                     Artemis Organization
+                </a> --}}
+
+                <a class="navbar-brand p-3 pointer hover-big pointer" href="#">
+                    <img src="{{url('/images/ARTEMISFinal.png')}}" alt="logo" height="60px" />
                 </a>
+
+
                 <!-- Mobile menu button -->
-                <div @click="isOpen = !isOpen" class="flex md:hidden">
+                {{-- <div @click="isOpen = !isOpen" class="flex md:hidden">
                     <button type="button"
                         class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
                         aria-label="toggle menu">
@@ -37,22 +43,28 @@
                             </path>
                         </svg>
                     </button>
-                </div>
+                </div> --}}
             </div>
 
+           
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div :class="isOpen ? 'flex' : 'hidden'"
-                class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="/">Home</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('categories.index') }}">About Us</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('menus.index') }}">Articles</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('reservations.step.one') }}">Appointment</a>
+                <div :class="isOpen ? 'flex' : 'hidden'"
+                    class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
+                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
+                    active text-jindigo hover-carmine hover-big"
+                        href="/">Home</a>
+                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
+                    active text-jindigo hover-carmine hover-big"
+                        href="{{ route('categories.index') }}">About Us</a>
+                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
+                   active text-jindigo hover-carmine hover-big"
+                        href="{{ route('menus.index') }}">Articles</a>
+                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
+                    active text-jindigo hover-carmine hover-big"
+                        href="{{ route('reservations.step.one') }}">Appointment</a>
 
-            </div>
+                </div>
+           
         </nav>
     </div>
     <div class="font-sans text-gray-900 antialiased min-h-screen">
@@ -199,6 +211,107 @@
             }(document, 'script', 'facebook-jssdk'));
             </script>
     <!-- End of Messenger Plugin  -->
+
+            {{-- start of modal donate --}}
+    <div class="modal" id="Donate">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content text-play">
+                <div class="modal-header bg-jindigo text-bubbles">
+                    <h2>Donate Now!</h2>
+                    <button class="btn btn-outline-carmine text-bubbles" data-bs-dismiss="modal">
+                        X
+                    </button>
+                </div>
+                <div class="modal-body">
+                
+                    <div class="row text-jindigo">
+                        <div class="col-4 col-md-2 col-lg-1">
+                            <img class="img-fluid " src="{{url('/images/Artemis logo.png')}}" alt="" />
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="row">
+                                <p class="text-start col-12 text-jindigo"> A nonprofit oraganization working with women and youth in the poorest communities to achieve sexual and reproductive health and rights.
+                                </p>
+                            </div>
+
+                            <div class="row">
+                            <p class="text-start col-12 text-jindigo"> 
+                                We do community organizing, primary care clinics for women and youth, policy advocacy.
+                            </p>
+                            </div>
+                        </div>
+                        <hr />
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="{{url('/images/BDO.png')}}" alt="" />
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 > Banco De Oro</h4>
+                                    <h6>Account Name:</h6>
+                                    <h5 class="font-weight-bold">Artemis Organization</h5>
+                                    <h6>Account Number:</h6>
+                                    <h5 class="font-weight-bold">00 123 456 7890</h5>
+
+                                </div>
+                                
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="{{url('/images/robinsonsbank.png')}}" alt="" />
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 >Robinsons Bank</h4>
+                                    <h6>Account Name:</h6>
+                                    <h5 class="font-weight-bold">Artemis Organization</h5>
+                                    <h6>Account Number:</h6>
+                                    <h5 class="font-weight-bold">00 123 456 7890</h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="{{url('/images/Gcash.png')}}" alt="" />
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 >Gcash</h4>
+                                    <h6>Account Name:</h6>
+                                    <h5 class="font-weight-bold">Artemis Organization</h5>
+                                    <h6>Gcash Number:</h6>
+                                    <h5 class="font-weight-bold">09 99 123 4567</h5>
+
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="{{url('/images/PayPal.png')}}" alt="" />
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 >Paypal</h4>
+                                    <h6>Paypal Email:</h6>
+                                    <h5 class="font-weight-bold">office@artemis.org</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+     {{-- end of modal donate --}}
+
 
 </body>
 
