@@ -19,7 +19,7 @@
 </head>
 
 <body class="text-play">
-    <div class="bg-white shadow-md" x-data="{ isOpen: false }">
+    {{-- <div class="bg-white shadow-md" x-data="{ isOpen: false }">
         <nav class="navbar-expand-lg  fixed-top text-play bg-diamond ">
             <div class="flex items-center justify-between">
                 {{-- <a class="text-bubbles text-jsan text-decoration-none hover-big hover-maxy"
@@ -27,9 +27,9 @@
                     Artemis Organization
                 </a> --}}
 
-                <a class="navbar-brand p-3 pointer hover-big pointer" href="#">
+                {{-- <a class="navbar-brand p-3 pointer hover-big pointer" href="#">
                     <img src="{{url('/images/ARTEMISFinal.png')}}" alt="logo" height="60px" />
-                </a>
+                </a> --}} 
 
 
                 <!-- Mobile menu button -->
@@ -44,11 +44,11 @@
                         </svg>
                     </button>
                 </div> --}}
-            </div>
+            {{-- </div> --}}
 
            
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-                <div :class="isOpen ? 'flex' : 'hidden'"
+                {{-- <div :class="isOpen ? 'flex' : 'hidden'"
                     class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
                     <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
                     active text-jindigo hover-carmine hover-big"
@@ -66,7 +66,67 @@
                 </div>
            
         </nav>
-    </div>
+    </div> --}}
+
+        <nav class="navbar navbar-expand-lg  bg-diamond fixed-top text-play">
+            <a class="navbar-brand p-3 pointer hover-big pointer" href="#">
+                <img src="{{url('/images/ARTEMISFinal.png')}}" alt="logo" height="60px" />
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a href="/"  class= "nav-link  active text-jindigo hover-carmine hover-big">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="{{ route('categories.index') }}" class= "nav-link  text-jindigo hover-carmine hover-big">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="{{ route('menus.index') }}" class= " nav-link  text-jindigo hover-carmine hover-big">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                    <a  href="{{ route('reservations.step.one') }}" class= " nav-link  text-jindigo hover-carmine hover-big">Appointment</a>
+                    </li>
+
+                    <li class="nav-item mx-auto d-block d-sm-none">
+                        <button class="btn btn-lg btn-maxy text-jindigo hover-carmine hover-big m-2 p-2 pe-5 ps-5"  data-bs-toggle="modal" data-bs-target="#Donate">
+                            <h5>Donate Now!</h5>
+                        </button>
+                    </li>
+                    <li class="nav-item mx-auto d-block d-sm-none">
+                        <div class="row align-items-center ms-4 me-4">
+                            <div class="col-6">
+                                <h5  data-bs-toggle="modal" data-bs-target="#SignIn" class="text-jindigo text-center hover-carmine hover-big">Sign In</h5>
+                            </div>
+                            <div class="col-6">
+                                <i class="fa-solid fa-circle-user fa-3x m-1 me-2 ms-2 text-jindigo"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="invisible-xs">
+                <button  data-bs-toggle="modal" data-bs-target="#Donate" class="btn btn-lg btn-maxy text-jindigo hover-carmine hover-big m-2 p-2 pe-5 ps-5">
+                    <h5>Donate Now!</h5>
+                </button>
+            </div>
+            <div class="invisible-xs row align-items-center ms-4 me-4">
+                <div class="col-6">
+                    <h5  data-bs-toggle="modal" data-bs-target="#SignIn" class="text-jindigo text-center hover-carmine hover-big pointer">Sign In</h5>
+                </div>
+                <div class="col-6">
+                    <i class="fa-solid fa-circle-user fa-3x m-1 me-2 ms-2 text-jindigo"></i>
+                </div>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+        </nav>
+
+    
     <div class="font-sans text-gray-900 antialiased min-h-screen">
         {{ $slot }}
     </div>
