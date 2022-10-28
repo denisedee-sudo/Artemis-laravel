@@ -17,7 +17,7 @@ class ReservationController extends Controller
     {
         $reservation = $request->session()->get('reservation');
         $min_date = Carbon::today();
-        $max_date = Carbon::now()->addWeek();
+        $max_date = Carbon::now()->addMonth();
         return view('reservations.step-one', compact('reservation', 'min_date', 'max_date'));
     }
 
@@ -29,7 +29,6 @@ class ReservationController extends Controller
             'email' => ['required', 'email'],
             'res_date' => ['required', 'date', new DateBetween, new TimeBetween],
             'tel_number' => ['required'],
-            'guest_number' => ['required'],
         ]);
 
         if (empty($request->session()->get('reservation'))) {
@@ -51,7 +50,6 @@ class ReservationController extends Controller
             return $value->res_date->format('Y-m-d') == $reservation->res_date->format('Y-m-d');
         })->pluck('table_id');
         $tables = Table::where('status', TableStatus::Avalaiable)
-            ->where('guest_number', '>=', $reservation->guest_number)
             ->whereNotIn('id', $res_table_ids)->get();
         return view('reservations.step-two', compact('reservation', 'tables'));
     }

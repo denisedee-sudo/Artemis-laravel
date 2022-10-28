@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Artemis Organization') }}</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -39,20 +39,13 @@
             </div>
             <nav :class="{'block': open, 'hidden': !open}"
                 class="flex-grow px-4 pb-4 md:block md:pb-0 md:overflow-y-auto">
-                <x-admin-nav-link :href="route('admin.categories.index')"
-                    :active="request()->routeIs('admin.categories.index')">
-                    {{ __('Categories') }}
-                </x-admin-nav-link>
-                <x-admin-nav-link :href="route('admin.menus.index')" :active="request()->routeIs('admin.menus.index')">
-                    {{ __('Menus') }}
-                </x-admin-nav-link>
                 <x-admin-nav-link :href="route('admin.tables.index')"
                     :active="request()->routeIs('admin.tables.index')">
-                    {{ __('Tables') }}
+                    {{ __('Doctors') }}
                 </x-admin-nav-link>
                 <x-admin-nav-link :href="route('admin.reservations.index')"
                     :active="request()->routeIs('admin.reservations.index')">
-                    {{ __('Reservations') }}
+                    {{ __('Appointments') }}
                 </x-admin-nav-link>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"

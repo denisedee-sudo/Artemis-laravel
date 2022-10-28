@@ -14,7 +14,7 @@
                             <div class="w-full bg-gray-200 rounded-full">
                                 <div
                                     class="w-40 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
-                                    Step1</div>
+                                    Part 1</div>
                             </div>
 
                             <form method="POST" action="{{ route('reservations.store.step.one') }}">
@@ -78,24 +78,12 @@
                                             value="{{ $reservation ? $reservation->res_date->format('Y-m-d\TH:i:s') : '' }}"
                                             class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
                                     </div>
-                                    <span class="text-xs">Please choose the time between 17:00-23:00.</span>
-                                    @error('res_date')
+                                    <span class="text-xs">Please choose the time between 08:00 - 18:00.</span>
+                                    {{-- @error('res_date')
                                         <div class="text-sm text-red-400">{{ $message }}</div>
-                                    @enderror
+                                    @enderror --}}
                                 </div>
-                                <div class="sm:col-span-6">
-                                    <label for="guest_number" class="block text-sm font-medium text-gray-700"> Guest
-                                        Number
-                                    </label>
-                                    <div class="mt-1">
-                                        <input type="number" id="guest_number" name="guest_number"
-                                            value="{{ $reservation->guest_number ?? '' }}"
-                                            class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                                    </div>
-                                    @error('guest_number')
-                                        <div class="text-sm text-red-400">{{ $message }}</div>
-                                    @enderror
-                                </div>
+                                
                                 <div class="mt-6 p-4 flex justify-end">
                                     <button type="submit"
                                         class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Next</button>
