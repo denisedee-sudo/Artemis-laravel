@@ -1,4 +1,5 @@
 <x-guest-layout>
+    <br><br>
     <div class="container text-center">
         <div class="h-32 md:h-auto md:w-1/2">
             <img class="object-cover w-full h-full"
@@ -6,7 +7,7 @@
         </div>
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
-                <h3 class="mb-4 text-xl font-bold text-blue-600">Book an Appointment</h3>
+                <h3 class="my-4 text-jindigo">Book an Appointment</h3>
 
                 <div class="w-full bg-gray-200 rounded-full">
                     <div

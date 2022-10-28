@@ -865,7 +865,9 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
-
+a{
+  text-decoration-line: none !important;
+}
 .col {
   flex: 1 0 0%;
 }
