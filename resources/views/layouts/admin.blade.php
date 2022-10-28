@@ -39,7 +39,7 @@
             </div>
             <nav :class="{'block': open, 'hidden': !open}"
                 class="flex-grow px-4 pb-4 md:block md:pb-0 md:overflow-y-auto">
-                <x-admin-nav-link class="text-decoration-none text-jindigo hover-carmine" :href="route('admin.tables.index')"
+                <x-admin-nav-link class="text-decoration-none text-jindigo hover-maxy" :href="route('admin.tables.index')"
                     :active="request()->routeIs('admin.tables.index')">
                     {{ __('Doctors') }}
                 </x-admin-nav-link>
