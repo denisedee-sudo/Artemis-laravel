@@ -27,7 +27,7 @@ class DateBetween implements Rule
     public function passes($attribute, $value)
     {
         $pickupDate = Carbon::parse($value);
-        $lastDate = Carbon::now()->addWeek();
+        $lastDate = Carbon::now()->addMonth();
 
         return $value >= now() && $value <= $lastDate;
     }
@@ -39,6 +39,6 @@ class DateBetween implements Rule
      */
     public function message()
     {
-        return 'Please choose the date between a week from  now.';
+        return 'Please choose a date from now to a month from  now.';
     }
 }
