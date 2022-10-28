@@ -18,9 +18,9 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
-<body>
+<body class="text-play">
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
-        <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
+        <nav class="bg-carmine container ">
             <div class="flex items-center justify-between">
                 <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400"
                     href="#">
