@@ -130,13 +130,13 @@
             <h3 class="pt-2 text-play" >About Us</h3>
             <ul class="list-unstyled mb-0 ">
                 <li class=" hover-big">
-                    <a href="About.html" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Who We Are</a>
+                    <a href="{{url('about')}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Who We Are</a>
                 </li>
                 <li class="hover-big">
-                    <a href="About.html#whatwedo" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">What We Do</a>
+                    <a href="{{url('about')}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">What We Do</a>
                 </li>
                 <li class="hover-big">
-                    <a href="About.html#FAQ" class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">FAQ's</a>
+                    <a href="{{url('about')}}" class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">FAQ's</a>
                 </li> 
             </ul>
             
@@ -148,10 +148,10 @@
             <h3 class="pt-2 text-play" >Stay Informed</h3>
             <ul class="list-unstyled mb-0 ">
                 <li class="hover-big">
-                    <a href="Articles.html#articles" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Articles</a>
+                    <a href="{{url('articles')}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Articles</a>
                 </li>
                 <li class="hover-big"   >
-                    <a href="Articles.html" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Project Highlights</a>
+                    <a href="{{url('articles')}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Project Highlights</a>
                 </li>
             </ul>
         </div>
