@@ -31,13 +31,13 @@
                 </p>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="Images/1.png" alt="" class="img-fluid w-100 my-5 rounded shadow-lg hover-big" style="max-height: 350px;">
+                <img src="{{url('/images/1.png')}}" alt="" class="img-fluid w-100 my-5 rounded shadow-lg hover-big" style="max-height: 350px;">
             </div>
         </div>
 
         <div class="container-fluid bg-diamond row text-jindigo text-jsan">
             <div class="col-12 col-lg-6 ">
-                <img src="Images/2.png" alt="" class="img-fluid w-100 my-5 rounded shadow-lg hover-big" style="max-height: 350px;">
+                <img src="{{url('/images/2.png')}}" alt="" class="img-fluid w-100 my-5 rounded shadow-lg hover-big" style="max-height: 350px;">
             </div>
             <div class="col-12 col-lg-6 text-start" id="whatwedo">
                 <br>
@@ -68,7 +68,7 @@
                     nearby public hospitals.                </p>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="Images/3.png" alt="" class="img-fluid w-100 my-5 rounded shadow-lg hover-big" style="max-height: 350px;" >
+                <img src="{{url('/images/3.png')}}" alt="" class="img-fluid w-100 my-5 rounded shadow-lg hover-big" style="max-height: 350px;" >
             </div>
         </div>
     </div>
