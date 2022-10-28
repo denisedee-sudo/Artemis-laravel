@@ -1,5 +1,5 @@
 <x-guest-layout>
-
+    
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -13,13 +13,13 @@
         <section id="heroSection" class="carousel slide col-12 pt-3 pb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{url('/images/carousel1.png')}}" alt="carousel1"/>                
+                    <img src="{{url('/images/carousel1.png')}}" alt="carousel1" class="img-fluid"/>                
                 </div>
                 <div class="carousel-item">
-                    <img src="{{url('/images/carousel2.png')}}" alt="carousel2"/>
+                    <img src="{{url('/images/carousel2.png')}}" alt="carousel2" class="img-fluid"/>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{url('/images/carousel3.png')}}" alt="carousel3"/>
+                    <img src="{{url('/images/carousel3.png')}}" alt="carousel3" class="img-fluid"/>
                 </div>        
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#heroSection" data-bs-slide="prev">
