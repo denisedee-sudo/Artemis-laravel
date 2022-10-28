@@ -18,7 +18,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
-<body class="font-sans antialiased">
+<body class="bg-bubbles font-sans antialiased">
     <div class="flex-col w-full md:flex md:flex-row md:min-h-screen">
         <div @click.away="open = false"
             class="flex flex-col flex-shrink-0 w-full text-gray-700 bg-slate-100 md:w-64 dark:text-gray-200 dark:bg-gray-800"
@@ -39,7 +39,7 @@
             </div>
             <nav :class="{'block': open, 'hidden': !open}"
                 class="flex-grow px-4 pb-4 md:block md:pb-0 md:overflow-y-auto">
-                <x-admin-nav-link :href="route('admin.tables.index')"
+                <x-admin-nav-link class="text-decoration-none text-jindigo hover-carmine" :href="route('admin.tables.index')"
                     :active="request()->routeIs('admin.tables.index')">
                     {{ __('Doctors') }}
                 </x-admin-nav-link>
