@@ -33,7 +33,6 @@ class ReservationStoreRequest extends FormRequest
             'res_date' => ['required', 'date', new DateBetween, new TimeBetween],
             'tel_number' => ['required'],
             'table_id' => ['required'],
-            'guest_number' => ['required'],
         ];
     }
 }

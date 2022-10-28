@@ -25,9 +25,7 @@ class TableStoreRequest extends FormRequest
     {
         return [
             'name' => ['required'],
-            'guest_number' => ['required'],
             'status' => ['required'],
-            'location' => ['required'],
         ];
     }
 }
