@@ -58,7 +58,117 @@
     <div class="font-sans text-gray-900 antialiased min-h-screen">
         {{ $slot }}
     </div>
-    <footer class="bg-gray-800 border-t border-gray-200">
+    <!-- Start of Footer -->
+    <footer class="row bg-jindigo text-bubbles p-1 text-party">
+        <div class="container-fluid bg-jindigo text-bubbles">
+            <div class="row">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-3">
+                    <br><br>
+                    <h3 class="text-maxy">JOIN US</h3>
+                    <p class="text-justify">Artemis Organization currently has over 6,000 members, from over 180 countries. Our members are part of a powerful base of feminist, women’s rights and gender justice defenders, activists and allies, connecting, exchanging, learning and acting together for transformative change.</p>
+                    <button class="btn btn-lg btn-carmine text-jindigo hover-maxy hover-big" data-bs-toggle="modal" data-bs-target="#Donate"> BE A SPONSOR NOW</button>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <br><br>
+                    <h3 class="text-carmine">DONATE</h3>
+                    <p class="text-justify">You can also show your support for transformative change by making a donation to Artemis Organization. Your valuable contribution will help sustain the work we do across the globe to support women and youth in the poorest communities to achieve sexual and reproductive health and rights.
+
+                    </p>
+                    <button class="btn btn-lg btn-maxy text-jindigo hover-carmine hover-big"  data-bs-toggle="modal" data-bs-target="#Donate">DONATE NOW</button>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <br><br>
+                    <h3 class="text-bubbles">Connect with us</h3>
+                    <a class="col-1 text-decoration-none" href="">
+                        <i class="hover-gradient text-bubbles hover-big p-2 rounded-circle bg-jindigo fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a class="col-1 text-decoration-none" href="">
+                        <i class="hover-gradient text-bubbles hover-big p-2 rounded-circle bg-jindigo fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a class="col-1 text-decoration-none" href="">
+                        <i class="hover-gradient text-bubbles hover-big p-2 rounded-circle bg-jindigo fa-brands fa-twitter fa-2x"></i>
+                    </a>
+                    <p>Join the conversation and stay connected with the community. Receive a regular selection of feminist analysis, resources and ways to get involved with the movements.</p>
+                    
+                    <form action="" class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter Email Address"/>
+                        <button class="btn btn-lg btn-outline-bubbles text-bubbles hover-jindigo hover-big">SIGN ME UP</button>
+                     </form>
+                    <!-- <button data-bs-toggle="modal" data-bs-target="#nLetter" class="btn btn-lg btn-outline-bubbles text-bubbles hover-jindigo hover-big">SIGN ME UP</button> -->
+                </div>
+                
+            </div>
+            <br><br>
+        </div>
+        <hr>
+
+        <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+
+            <img src="{{url('/images/ARTEMISlogoDark.png')}}" alt="logodark"/>
+
+            <h5 class="hover-big hover-maxy" >Address:  27 Ofelia St., Ofelia Village, Bgy, Project 8, Quezon City, 1106 Metro Manila</h5>
+            <h5 class="hover-big hover-maxy" >Phone: (02) 3454 3854</h5>
+            <h5 class="hover-big hover-maxy" >Email: office@artemis.org</h5>
+        </div>
+        <div class="col-12 col-md-3  text-center">
+            <div class="invisible-xs py-5">
+                <br><br>
+            </div>
+            <h3 class="pt-2 text-play" >About Us</h3>
+            <ul class="list-unstyled mb-0 ">
+                <li class=" hover-big">
+                    <a href="About.html" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Who We Are</a>
+                </li>
+                <li class="hover-big">
+                    <a href="About.html#whatwedo" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">What We Do</a>
+                </li>
+                <li class="hover-big">
+                    <a href="About.html#FAQ" class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">FAQ's</a>
+                </li> 
+            </ul>
+            
+        </div>
+        <div class="col-12 col-md-3 text-center">
+            <div class="invisible-xs py-5">
+                <br><br>
+            </div>
+            <h3 class="pt-2 text-play" >Stay Informed</h3>
+            <ul class="list-unstyled mb-0 ">
+                <li class="hover-big">
+                    <a href="Articles.html#articles" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Articles</a>
+                </li>
+                <li class="hover-big"   >
+                    <a href="Articles.html" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Project Highlights</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+            <div class="invisible-xs py-5">
+                <br><br>
+            </div>
+            <h3 class="pt-2 text-play" >Get Involved</h3>
+            <ul class="list-unstyled mb-0 ">
+                <li class=" hover-big">
+                    <a  class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none " data-bs-toggle="modal" data-bs-target="#Donate">Donate</a>
+                </li>
+                <li class="hover-big">
+                    <a  class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none " data-bs-toggle="modal" data-bs-target="#Donate">Become a Sponsor</a>
+                </li>
+                <li class="hover-big">
+                    <a  class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">Events</a>
+                </li> 
+            </ul>
+        </div>
+        <hr>
+        <div class="col-12 text-center">
+            © 2022 Copyright
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    {{-- <footer class="bg-gray-800 border-t border-gray-200">
         <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto lg:justify-between">
             <div class="flex flex-wrap justify-center">
                 <ul class="flex items-center space-x-4 text-white">
@@ -101,7 +211,10 @@
                 </a>
             </div>
         </div>
-    </footer>
+    </footer> --}}
+
+
+
 </body>
 
 </html>
