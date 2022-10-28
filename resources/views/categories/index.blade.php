@@ -3,8 +3,8 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
         <div class="container-fluid  text-jindigo text-jsan">
-            <div class="text-center">
-                <img src="{{url('/images/aboutpage.png')}}" alt="aboutpage"/>
+            <div class="text-center ">
+                <img class="img-fluid" src="{{url('/images/aboutpage.png')}}" alt="aboutpage"/>
             </div>
             <div class="row text-center text-play bg-diamond p-3">
                 <div class="col-4">
