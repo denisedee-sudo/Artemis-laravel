@@ -1,11 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
+// functions
+@import '../../node_modules/bootstrap/scss/functions';
 // Variables
-@import 'functions';
-@import 'variables';
-// From old vanilla frontend below
-
+@import '../../node_modules/bootstrap/scss/variables';
 $custom-theme-colors:(
     "carmine": #F14444,
     "bubbles": #E8F6FF,
@@ -16,6 +14,7 @@ $custom-theme-colors:(
 );
 
 $theme-colors: map-merge($custom-theme-colors , $theme-colors );
-// From old vanilla frontend above
+
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../css/app.css';
