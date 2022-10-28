@@ -42,7 +42,6 @@ class TableController extends Controller
     {
         Table::create([
             'name' => $request->name,
-            'guest_number' => $request->guest_number,
             'status' => $request->status,
             'location' => $request->location,
         ]);
