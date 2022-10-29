@@ -7,6 +7,7 @@
     <div class="container text-jindigo text-play">
         <br />
         <br />
+        <br />
         <div class="col-12 pt-5 pb-4 text-jindigo text-center">
             <div class="col-12 text-jindigo text-center">
                 <div class="container input-group">
