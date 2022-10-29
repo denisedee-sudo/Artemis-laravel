@@ -96,10 +96,7 @@
                     <li class="nav-item mx-auto d-block d-sm-none">
                         <div class="row align-items-center ms-4 me-4">
                             <div class="col-6">
-                                <h5  data-bs-toggle="modal" data-bs-target="#SignIn" class="text-jindigo text-center hover-carmine hover-big">Sign In</h5>
-                            </div>
-                            <div class="col-6">
-                                <i class="fa-solid fa-circle-user fa-3x m-1 me-2 ms-2 text-jindigo"></i>
+                                <a :href="route('admin.index')" :active="request()->routeIs('admin.index')"  class="text-jindigo text-center hover-carmine hover-big"><h5>Sign In</h5></a>
                             </div>
                         </div>
                     </li>
