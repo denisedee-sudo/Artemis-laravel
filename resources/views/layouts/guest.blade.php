@@ -96,7 +96,7 @@
                     <li class="nav-item mx-auto d-block d-sm-none">
                         <div class="row align-items-center ms-4 me-4">
                             <div class="col-6">
-                                <a :href="route('admin.index')" :active="request()->routeIs('admin.index')"  class="text-jindigo text-center hover-carmine hover-big"><h5>Sign In</h5></a>
+                                <a href="{{route('login')}}" class="text-jindigo text-center hover-carmine hover-big"><h5>Login</h5></a>
                             </div>
                         </div>
                     </li>
@@ -109,11 +109,9 @@
             </div>
             <div class="invisible-xs row align-items-center ms-4 me-4">
                 <div class="col-6">
-                    <h5  data-bs-toggle="modal" data-bs-target="#SignIn" class="text-jindigo text-center hover-carmine hover-big pointer">Sign In</h5>
+                    <a href="{{route('login')}}" class="text-jindigo text-center hover-carmine hover-big"><h5>Login</h5></a>
                 </div>
-                <div class="col-6">
-                    <i class="fa-solid fa-circle-user fa-3x m-1 me-2 ms-2 text-jindigo"></i>
-                </div>
+                
             </div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bar-toggle">
                 <span class="navbar-toggler-icon"></span>
@@ -187,13 +185,13 @@
             <h3 class="pt-2 text-play" >About Us</h3>
             <ul class="list-unstyled mb-0 ">
                 <li class=" hover-big">
-                    <a href="{{url('about')}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Who We Are</a>
+                    <a href="{{url('about') ."#whoweare"}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Who We Are</a>
                 </li>
                 <li class="hover-big">
-                    <a href="{{url('about')}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">What We Do</a>
+                    <a href="{{url('about') ."#whatwedo"}}" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">What We Do</a>
                 </li>
                 <li class="hover-big">
-                    <a href="{{url('about')}}" class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">FAQ's</a>
+                    <a href="{{url('about') ."#FAQ"}}" class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">FAQ's</a>
                 </li> 
             </ul>
             
