@@ -19,54 +19,6 @@
 </head>
 
 <body class="text-play">
-    {{-- <div class="bg-white shadow-md" x-data="{ isOpen: false }">
-        <nav class="navbar-expand-lg  fixed-top text-play bg-diamond ">
-            <div class="flex items-center justify-between">
-                {{-- <a class="text-bubbles text-jsan text-decoration-none hover-big hover-maxy"
-                    href="#">
-                    Artemis Organization
-                </a> --}}
-
-                {{-- <a class="navbar-brand p-3 pointer hover-big pointer" href="#">
-                    <img src="{{url('/images/ARTEMISFinal.png')}}" alt="logo" height="60px" />
-                </a> --}} 
-
-
-                <!-- Mobile menu button -->
-                {{-- <div @click="isOpen = !isOpen" class="flex md:hidden">
-                    <button type="button"
-                        class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
-                        aria-label="toggle menu">
-                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-                            <path fill-rule="evenodd"
-                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                            </path>
-                        </svg>
-                    </button>
-                </div> --}}
-            {{-- </div> --}}
-
-           
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-                {{-- <div :class="isOpen ? 'flex' : 'hidden'"
-                    class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
-                    active text-jindigo hover-carmine hover-big"
-                        href="/">Home</a>
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
-                    active text-jindigo hover-carmine hover-big"
-                        href="{{ route('categories.index') }}">About Us</a>
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
-                   active text-jindigo hover-carmine hover-big"
-                        href="{{ route('menus.index') }}">Articles</a>
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400
-                    active text-jindigo hover-carmine hover-big"
-                        href="{{ route('reservations.step.one') }}">Appointment</a>
-
-                </div>
-           
-        </nav>
-    </div> --}}
 
         <nav class="navbar navbar-expand-lg  bg-diamond fixed-top text-play">
             <a class="navbar-brand p-3 pointer hover-big pointer" href="#">
