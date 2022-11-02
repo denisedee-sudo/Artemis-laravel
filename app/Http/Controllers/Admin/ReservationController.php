@@ -30,7 +30,7 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        $tables = Table::where('status', TableStatus::Avalaiable)->get();
+        $tables = Table::where('status', TableStatus::Available)->get();
         return view('admin.reservations.create', compact('tables'));
     }
 
@@ -51,7 +51,7 @@ class ReservationController extends Controller
         }
         Reservation::create($request->validated());
 
-        return to_route('admin.reservations.index')->with('success', 'Reservation created successfully.');
+        return to_route('admin.reservations.index')->with('success', 'Reservation created successfully');
     }
 
     /**
@@ -73,7 +73,7 @@ class ReservationController extends Controller
      */
     public function edit(Reservation $reservation)
     {
-        $tables = Table::where('status', TableStatus::Avalaiable)->get();
+        $tables = Table::where('status', TableStatus::Available)->get();
         return view('admin.reservations.edit', compact('reservation', 'tables'));
     }
 
@@ -96,7 +96,7 @@ class ReservationController extends Controller
         }
 
         $reservation->update($request->validated());
-        return to_route('admin.reservations.index')->with('success', 'Reservation updated successfully.');
+        return to_route('admin.reservations.index')->with('success', 'Reservation updated successfully');
     }
 
     /**
