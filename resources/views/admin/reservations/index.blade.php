@@ -9,10 +9,13 @@
         <div class="m-5 p-3">
             <div class="">
                 <a href="{{ route('admin.reservations.create') }}"
-                    class="hover-carmine text-jindigo text-jsan">Add Appointment</a>
+                    class="hover-maxy text-bubbles text-jsan btn btn-jindigo">Add Appointment</a>
+                
             </div>
-            <div class="">
-                <table class="min-w-full">
+            <br>
+            <div class="table-responsive">
+                <table class="table align-items-center table-striped min-w-full bg-bubbles">
+            
                     <thead class="bg-gray-50 dark:bg-gray-700">
                         <tr>
                             <th scope="col"

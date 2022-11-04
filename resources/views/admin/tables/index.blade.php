@@ -7,9 +7,11 @@
     <div class="m-5 p-3">
             <div class="text-jsan text-jindigo ">
                 <a href="{{ route('admin.tables.create') }}"
-                    class="hover-carmine text-jindigo">Add Doctor</a>
+                    class="hover-maxy text-bubbles text-jsan btn btn-jindigo">Add Doctor</a>
             </div>
-            <table class="min-w-full">
+            <br>
+            <table class="table align-items-center table-striped min-w-full bg-bubbles">
+          
                 <thead class="bg-gray-50 dark:bg-gray-700">
                     <tr>
                         <th scope="col"
