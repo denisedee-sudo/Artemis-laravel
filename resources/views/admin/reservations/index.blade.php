@@ -12,7 +12,7 @@
                     class="hover-carmine text-jindigo text-jsan">Add Appointment</a>
             </div>
             <div class="">
-                <table class="min-w-full">
+                <table class="table align-items-center table-striped">
                     <thead class="bg-gray-50 dark:bg-gray-700">
                         <tr>
                             <th scope="col"
@@ -33,6 +33,8 @@
                             </th>
                             <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
                                 Edit
+                            </th>
+                            <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
                             </th>
                         </tr>
                     </thead>

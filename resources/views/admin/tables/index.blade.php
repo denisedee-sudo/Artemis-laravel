@@ -9,7 +9,7 @@
                 <a href="{{ route('admin.tables.create') }}"
                     class="hover-carmine text-jindigo">Add Doctor</a>
             </div>
-            <table class="min-w-full">
+            <table class="table align-items-center table-striped">
                 <thead class="bg-gray-50 dark:bg-gray-700">
                     <tr>
                         <th scope="col"
@@ -23,6 +23,8 @@
                         <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
                            Edit
                         </th>
+                        <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
+                         </th>
                     </tr>
                 </thead>
                 <tbody>
