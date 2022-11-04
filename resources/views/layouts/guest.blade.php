@@ -85,13 +85,13 @@
                 <div class="col-12 col-lg-3">
                     <br><br>
                     <h3 class="text-maxy">JOIN US</h3>
-                    <p class="text-justify">Artemis Organization currently has over 6,000 members, from over 180 countries. Our members are part of a powerful base of feminist, women’s rights and gender justice defenders, activists and allies, connecting, exchanging, learning and acting together for transformative change.</p>
+                    <p class="text-justify">Artemis Organization currently has over 6,000 members, from over 180 countries. Our members are part of a powerful base of feminists, women’s rights and gender justice defenders, activists and allies, connecting, exchanging, learning and acting together for transformative change.</p>
                     <button class="btn btn-lg btn-carmine text-jindigo hover-maxy hover-big" data-bs-toggle="modal" data-bs-target="#Donate"> BE A SPONSOR NOW</button>
                 </div>
                 <div class="col-12 col-lg-3">
                     <br><br>
                     <h3 class="text-carmine">DONATE</h3>
-                    <p class="text-justify">You can also show your support for transformative change by making a donation to Artemis Organization. Your valuable contribution will help sustain the work we do across the globe to support women and youth in the poorest communities to achieve sexual and reproductive health and rights.
+                    <p class="text-justify">You can also show your support for transformative change by donating to Artemis Organization. Your valuable contribution helps sustain the work we do across the globe to support women and youth in the poorest communities achieve sexual and reproductive empowerment.
 
                     </p>
                     <button class="btn btn-lg btn-maxy text-jindigo hover-carmine hover-big"  data-bs-toggle="modal" data-bs-target="#Donate">DONATE NOW</button>
