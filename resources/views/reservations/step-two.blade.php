@@ -3,19 +3,14 @@
         <div class="flex items-center min-h-screen bg-gray-50">
             <div class="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
                 <div class="flex flex-col md:flex-row">
-                    <div class="h-32 md:h-auto md:w-1/2">
-                        <img class="img-fluid"
-                            src="https://cdn.pixabay.com/photo/2021/01/15/17/01/green-5919790__340.jpg" alt="img" />
+                    <br><br>
+                    <div class="my-3">
+                        <img class="img-fluid col-6 rounded"
+                            src="{{asset('images/calendar.png')}}" alt="img" />
                     </div>
                     <div class="flex">
                         <div class="w-full">
                             <h3 class="mb-4 text-xl font-bold text-blue-600">Book an Appointment</h3>
-
-                            <div class="w-full bg-gray-200 rounded-full">
-                                <div
-                                    class="w-100 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
-                                    Part 2</div>
-                            </div>
 
                             <form method="POST" action="{{ route('reservations.store.step.two') }}">
                                 @csrf

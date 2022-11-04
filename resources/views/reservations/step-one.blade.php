@@ -1,19 +1,14 @@
 <x-guest-layout>
     <br><br>
     <div class="container text-center">
-        <div class="h-32 md:h-auto md:w-1/2">
-            <img class="img-fluid"
-                src="https://cdn.pixabay.com/photo/2021/01/15/17/01/green-5919790__340.jpg" alt="img" />
+        <br><br>
+        <div class="my-3">
+            <img class="img-fluid col-6 rounded"
+                src="{{asset('images/calendar.png')}}" alt="img" />
         </div>
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
                 <h3 class="my-4 text-jindigo">Book an Appointment</h3>
-
-                <div class="w-full bg-gray-200 rounded-full">
-                    <div
-                        class="w-40 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
-                        Part 1</div>
-                </div>
 
                 <form method="POST" action="{{ route('reservations.store.step.one') }}">
                     @csrf
@@ -57,7 +52,7 @@
                             number
                         </label>
                         <div class="mt-1">
-                            <input type="text" id="tel_number" name="tel_number"
+                            <input type="number" placeholder="9xxxxxxxxx" min="9000000000" min="9999999999"   id="tel_number" name="tel_number"
                                 value="{{ $reservation->tel_number ?? '' }}"
                                 class="block border rounded py-2 px-3" />
                         </div>
@@ -66,7 +61,7 @@
                         @enderror
                     </div>
                     <div class="sm:col-span-6">
-                        <label for="res_date" class="block text-sm font-medium text-gray-700"> Reservation
+                        <label for="res_date" class="m-1"> Appointment
                             Date
                         </label>
                         <div class="mt-1">
