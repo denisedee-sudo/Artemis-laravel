@@ -10,7 +10,7 @@
                     class="hover-maxy text-bubbles text-jsan btn btn-jindigo">Add Doctor</a>
             </div>
             <br>
-            <table class="table align-items-center table-striped table align-items-center table-striped bg-bubbles">
+            <table class="table align-items-center align-items-center table-striped bg-bubbles">
                 <thead class="">
                     <tr>
                         <th scope="col"

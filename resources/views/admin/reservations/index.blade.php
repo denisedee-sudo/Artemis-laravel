@@ -19,25 +19,25 @@
                     <thead class="bg-gray-50 dark:bg-gray-700">
                         <tr>
                             <th scope="col"
-                            class="py-4 px-2 text-jsan text-jindigo text-start">
+                            class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
                                 Name
                             </th>
                             <th scope="col"
-                               class="py-4 px-2 text-jsan text-jindigo text-start">
+                               class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
                                 Email
                             </th>
                             <th scope="col"
-                                class="py-4 px-2 text-jsan text-jindigo text-start">
+                                class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
                                 Date
                             </th>
                             <th scope="col"
-                            class="py-4 px-2 text-jsan text-jindigo text-start">
+                            class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
                                 Doctor
                             </th>
-                            <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
+                            <th scope="col" class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
                                 Edit
                             </th>
-                            <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
+                            <th scope="col" class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
                             </th>
                         </tr>
                     </thead>
