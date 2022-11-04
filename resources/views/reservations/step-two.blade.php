@@ -11,12 +11,6 @@
                         <div class="w-full">
                             <h3 class="mb-4 text-xl font-bold text-blue-600">Book an Appointment</h3>
 
-                            <div class="w-full bg-gray-200 rounded-full">
-                                <div
-                                    class="w-100 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
-                                    Part 2</div>
-                            </div>
-
                             <form method="POST" action="{{ route('reservations.store.step.two') }}">
                                 @csrf
                                 <div class="sm:col-span-6 pt-5">
