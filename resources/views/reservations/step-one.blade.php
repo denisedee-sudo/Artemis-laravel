@@ -71,7 +71,7 @@
                                 value="{{ $reservation ? $reservation->res_date->format('Y-m-d\TH:i:s') : '' }}"
                                 class="block border rounded py-2 px-4" />
                         </div>
-                        <span class="text-xs">Please choose the time between 08:00 -18:00.</span>
+                        <span class="text-xs">Please choose a time between 08:00 -18:00.</span>
                         @error('res_date')
                             <div class="text-sm text-red-400">{{ $message }}</div>
                         @enderror

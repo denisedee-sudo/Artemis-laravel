@@ -4,7 +4,7 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-   <div class="container-fluid py-4">
+   {{-- <div class="container-fluid py-4">
         <div class="row">
                             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                                 <div class="card bg-jindigo text-bubbles">
@@ -106,7 +106,6 @@
                                 </div>
                             </div>
         </div>
-                    
         <div class="row mt-4">
                             <div class="col-lg-7 mb-lg-0 mb-4">
                                 <div class="card bg-bubbles text-jindigo text-jsan">
@@ -255,8 +254,6 @@
                                 </div>
                             </div>
         </div>
-
-
-
-    </div>
+    </div> --}}
+    <h2 class="text-center text-play text-jindigo py-5">Welcome, {{ Auth::user()->name }}</h2>
 </x-admin-layout>
