@@ -55,7 +55,22 @@
                                     class="py-4 px-2 text-jsan text-jindigo text-center">
                                     {{ $reservation->table->name }}
                                 </td>
-                                <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
+                                <td class="py-4 px-2 text-jsan text-jindigo text-center">
+                                        <a href="{{ route('admin.reservations.edit', $reservation->id) }}"
+                                            class="btn btn-jindigo text-bubbly hover-maxy">Edit</a>
+                                </td>
+                                <td class="py-4 px-2 text-jsan text-jindigo text-center">
+                                    <form
+                                            class=""
+                                            method="POST"
+                                            action="{{ route('admin.reservations.destroy', $reservation->id) }}"
+                                            onsubmit="return confirm('Are you sure?');">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-jindigo text-bubbly hover-maxy" type="submit">Delete</button>
+                                        </form>
+                                </td>
+                                {{-- <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
                                     <div class="flex space-x-2">
                                         <a href="{{ route('admin.reservations.edit', $reservation->id) }}"
                                             class="btn btn-jindigo text-bubbly hover-maxy">Edit</a>
@@ -69,7 +84,7 @@
                                             <button class="btn btn-jindigo text-bubbly hover-maxy" type="submit">Delete</button>
                                         </form>
                                     </div>
-                                </td>
+                                </td> --}}
                             </tr>
                         @endforeach
 

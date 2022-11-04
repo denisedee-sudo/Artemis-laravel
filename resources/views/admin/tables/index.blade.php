@@ -38,8 +38,23 @@
                                 class="py-4 px-2 text-jsan text-jindigo text-center">
                                 {{ $table->status->name }}
                             </td>
-                            <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                <div class="flex space-x-2">
+                            <td class="py-4 px-2 text-jsan text-jindigo text-center">
+                                    <a href="{{ route('admin.tables.edit', $table->id) }}"
+                                        class="btn btn-jindigo hover-maxy text-bubbles">Edit</a>
+                            </td>
+                            <td class="py-4 px-2 text-jsan text-jindigo text-center">
+                                    <form
+                                        class=""
+                                        method="POST"
+                                        action="{{ route('admin.tables.destroy', $table->id) }}"
+                                        onsubmit="return confirm('Are you sure?');">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-jindigo hover-maxy" type="submit">Delete</button>
+                                    </form>
+                            </td>
+                            {{-- <td class="py-4 px-2 text-jsan text-jindigo text-center">
+                                <div class="">
                                     <a href="{{ route('admin.tables.edit', $table->id) }}"
                                         class="btn btn-jindigo hover-maxy text-bubbles">Edit</a>
                                     <form
@@ -52,7 +67,7 @@
                                         <button class="btn btn-jindigo hover-maxy" type="submit">Delete</button>
                                     </form>
                                 </div>
-                            </td>
+                            </td> --}}
                         </tr>
                     @endforeach
 
