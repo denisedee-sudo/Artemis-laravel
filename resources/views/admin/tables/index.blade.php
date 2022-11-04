@@ -11,8 +11,7 @@
             </div>
             <br>
             <table class="table align-items-center table-striped table align-items-center table-striped bg-bubbles">
-          
-                <thead class="bg-gray-50 dark:bg-gray-700">
+                <thead class="">
                     <tr>
                         <th scope="col"
                         class="py-4 px-2 text-jsan text-jindigo text-start">
