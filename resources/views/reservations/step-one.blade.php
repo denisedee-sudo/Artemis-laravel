@@ -1,9 +1,10 @@
 <x-guest-layout>
     <br><br>
     <div class="container text-center">
-        <div class="h-32 md:h-auto md:w-1/2">
-            <img class="img-fluid"
-                src="https://cdn.pixabay.com/photo/2021/01/15/17/01/green-5919790__340.jpg" alt="img" />
+        <br><br>
+        <div class="my-3">
+            <img class="img-fluid col-6 rounded"
+                src="{{asset('images/calendar.png')}}" alt="img" />
         </div>
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
