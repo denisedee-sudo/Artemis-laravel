@@ -48,14 +48,14 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="icon-box">
                         <h3 ><i class="fa-solid fa-pen-to-square" ></i></h3>
-                        <h4 class="title">Book Appointment</h4>
+                        <h4 class="title">Book an Appointment with Us</h4>
                         <p class="description">Fill up the user information form and check the available appointment near you.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="icon-box">
                             <h3 ><i class="fa-brands fa-readme"></i></h3>
-                        <h4 class="title">Read Articles about Birth Control</h4>
+                        <h4 class="title">Read About Birth Control</h4>
                         <p class="description">Learn more about birth control and how to support fellow women and youth to achieve sexual and reproductive health and rights.</p>
                         </div>
                     </div>
@@ -158,9 +158,8 @@
                     </div>
                 </div>
                 <br />
-                <div class="row">
+                {{-- <div class="row">
                     <div class="fb-grid col-12">
-                    {{-- {/* style="maxHeight: 1045px; overflowY: scroll" */} --}}
                             <div class="text-center  container-fluid py-4 bg-diamond fb-div" >
                                 <h2 class="p-3">Facebook Feed</h2>
                                 <div class="fb-post container-fluid p-1" data-href="https://web.facebook.com/ArtemisHealthNGO/posts/pfbid0xkWduf58SNCihmfstVM5HnoBPAjSpMfBngXG3HmoiDygjL5dRXezsDGgaTN1RMkDl" data-width="" data-show-text="true"><blockquote cite="https://www.facebook.com/ArtemisHealthNGO/posts/102331439292431" class="fb-xfbml-parse-ignore"><p>Anti-VAW (violence against women) info</p>Posted by <a href="https://www.facebook.com/ArtemisHealthNGO/">Artemis Organization</a> on&nbsp;<a href="https://www.facebook.com/ArtemisHealthNGO/posts/102331439292431">Monday, September 5, 2022</a></blockquote></div>
@@ -173,7 +172,7 @@
                                     Together with the Safe in Cyberspace Youth Fellowship  and UP Center for Women&#039;s and...</p>Posted by <a href="https://www.facebook.com/ArtemisHealthNGO/">Artemis Organization</a> on&nbsp;<a href="https://www.facebook.com/ArtemisHealthNGO/posts/102144049311170">Sunday, September 4, 2022</a></blockquote></div>
                             </div>
                     </div>
-                </div>
+                </div> --}}
                 <br />
             </div>
             <div class="col-lg-1"></div>
