@@ -4,9 +4,7 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
-        <div class="m-5 p-3">
+    <div class="m-5 p-3">
             <div class="text-jsan text-jindigo ">
                 <a href="{{ route('admin.tables.create') }}"
                     class="hover-carmine text-jindigo">Add Doctor</a>
@@ -73,6 +71,5 @@
 
                 </tbody>
             </table>
-        </div>
     </div>
 </x-admin-layout>

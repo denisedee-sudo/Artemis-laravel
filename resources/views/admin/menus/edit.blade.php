@@ -4,9 +4,7 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="flex m-2 p-2">
                 <a href="{{ route('admin.menus.index') }}"
                     class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Menu Index</a>
@@ -83,6 +81,5 @@
                 </div>
 
             </div>
-        </div>
     </div>
 </x-admin-layout>

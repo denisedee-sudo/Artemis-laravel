@@ -139,7 +139,6 @@
                         <a class="nav-link dropdown-toggle text-bubbles" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span>{{ Auth::user()->name }}</span>
                         </a>
-                    
                         
                         <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdown">
                             <form method="POST" action="{{ route('logout') }}">
