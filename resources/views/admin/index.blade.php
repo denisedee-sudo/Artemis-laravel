@@ -5,13 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-5">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-bubbles">
-                <div class="bg-bubbles">
-                    <h2 class="text-jindigo">You're logged in!</h2>
-                </div>
-            </div>
-        </div>
-    </div>
+   
+
+    
 </x-admin-layout>
