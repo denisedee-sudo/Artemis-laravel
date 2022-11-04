@@ -14,30 +14,30 @@
             </div>
             <br>
             <div class="table-responsive">
-                <table class="table align-items-center table-striped min-w-full bg-bubbles">
+                <table class="table table-bubbles align-items-center table-striped">
             
-                    <thead class="bg-gray-50 dark:bg-gray-700">
+                    <thead class="bg-jindigo">
                         <tr>
                             <th scope="col"
-                            class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
+                            class="py-4 px-2 mx-1 text-jsan text-bubbles text-center">
                                 Name
                             </th>
                             <th scope="col"
-                               class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
+                               class="py-4 px-2 mx-1 text-jsan text-bubbles text-center">
                                 Email
                             </th>
                             <th scope="col"
-                                class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
+                                class="py-4 px-2 mx-1 text-jsan text-bubbles text-center">
                                 Date
                             </th>
                             <th scope="col"
-                            class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
+                            class="py-4 px-2 mx-1 text-jsan text-bubbles text-center">
                                 Doctor
                             </th>
-                            <th scope="col" class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
+                            <th scope="col" class="py-4 px-2 mx-1 text-jsan text-bubbles text-center">
                                 Edit
                             </th>
-                            <th scope="col" class="py-4 px-2 mx-1 text-jsan text-jindigo text-start">
+                            <th scope="col" class="py-4 px-2 mx-1 text-jsan text-bubbles text-center">
                             </th>
                         </tr>
                     </thead>

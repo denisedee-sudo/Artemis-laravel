@@ -10,21 +10,21 @@
                     class="hover-maxy text-bubbles text-jsan btn btn-jindigo">Add Doctor</a>
             </div>
             <br>
-            <table class="table align-items-center align-items-center table-striped bg-bubbles">
-                <thead class="">
+            <table class="table align-items-center align-items-center table-striped">
+                <thead class="bg-jindigo">
                     <tr>
                         <th scope="col"
-                        class="py-4 px-2 text-jsan text-jindigo text-start">
+                        class="py-4 text-jsan text-bubbles text-center">
                             Name
                         </th>
                         <th scope="col"
-                        class="py-4 px-2 text-jsan text-jindigo text-start">
+                        class="py-4 text-jsan text-bubbles text-center">
                             Status
                         </th>
-                        <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
+                        <th scope="col" class="py-4 text-jsan text-bubbles text-center">
                            Edit
                         </th>
-                        <th scope="col" class="py-4 px-2 text-jsan text-jindigo text-start">
+                        <th scope="col" class="py-4 text-jsan text-bubbles text-center">
                          </th>
                     </tr>
                 </thead>
