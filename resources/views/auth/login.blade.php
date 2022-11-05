@@ -10,11 +10,13 @@
         <x-auth-session-status class="mb-4" :status="session('status')" />
 
         <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        
         <br><br><br><br>
+        {{-- <x-auth-validation-errors class="text-carmine" :errors="$errors" /> --}}
         <div class="row">
             <div class="col-1 col-lg-2"></div>
             <div class="col-10 col-lg-4">
+                <x-auth-validation-errors class="text-carmine" :errors="$errors" />
                 <form  class="border rounded p-5 my-3" method="POST" action="{{ route('login') }}">
                     @csrf
         

@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
     {{-- START OF HERO PAGE --}}
-        <br><br><br>
         <section id="heroSection" class="carousel slide col-12 pt-3 pb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">

@@ -10,7 +10,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-    
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> --}}
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -25,8 +25,8 @@
                 <img src="{{url('/images/ARTEMISFinal.png')}}" alt="logo" height="60px" />
             </a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="bar-toggle">
+                <ul class="navbar-nav text-center">
                     <li class="nav-item active">
                     <a href="/"  class= "nav-link  active text-jindigo hover-carmine hover-big">Home</a>
                     </li>
@@ -72,7 +72,7 @@
 
 
         </nav>
-
+        <br><br><br>
     
     <div class="font-sans text-gray-900 antialiased min-h-screen">
         {{ $slot }}
